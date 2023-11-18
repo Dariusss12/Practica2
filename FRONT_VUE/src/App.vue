@@ -34,7 +34,7 @@ console.log(frameworks)
 </script>
 
 <template>
-  <PresentationCard :name=name :lastname=lastname :summary=summary :city=city :country=country ></PresentationCard>
+  <PresentationCard :name=name :lastname=lastname :summary=summary :city=city :country=country :email=email></PresentationCard>
   <div class="block sm:flex">
     <template v-if="Array.isArray(hobbies)">
       <HobbiesCard :hobbies=hobbies></HobbiesCard>

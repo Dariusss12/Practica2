@@ -9,6 +9,9 @@
                 <h1 class="text-2xl ml-1">{{ props.city }}, {{ props.country }}.</h1>
             </div>
             <div class="flex mt-[30px] md:mt-[20px] lg:mt-[50px] justify-center sm:justify-end self-baseline">
+                <a :href="'mailto:' + props.email" class="w-[40px] mx-2" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/emailIcon.svg" class="w-[40px]">
+                </a>
                 <a href="https://www.facebook.com/profile.php?id=100001206821049" class="w-[40px] mx-2" target="_blank" rel="noopener noreferrer">
                     <img src="/icons/facebookIcon.svg" class="w-[40px]">
                 </a>
@@ -30,7 +33,8 @@ const props = defineProps({
   lastname: String,
   summary: String,
   city: String,
-  country: String
+  country: String,
+  email: String
 });
 
 </script>
