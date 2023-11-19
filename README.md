@@ -43,6 +43,14 @@ Abrir Xampp Control Panel e iniciar Apache y MySQL dando click en el botón "sta
 
 Ahora debes ir al archivo .env en la carpeta API_LARAVEL y en el apartado "DB_DATABASE=laravel" cambiar laravel por practica2 y guardar los cambios con ctrl + s.
 
+Debes verificar que el puerto de MySQL coincida con "DB_PORT" en el archivo .env. 
+
+****
+En caso de que no coincidan, debes copiar el puerto de MySQL y colocarlo en "DB_PORT".
+
+Ejemplo: "DB_PORT=1234".
+****
+
 Ir a Terminal -> New Terminal para abrir una nueva terminal.
 
 Ejecutar los siguientes comandos en orden:
